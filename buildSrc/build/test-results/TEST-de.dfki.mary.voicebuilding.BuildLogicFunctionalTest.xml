@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-04-14T15:56:05" hostname="nataniel-notebook" time="7.865">
+  <properties/>
+  <testcase name="testHelp" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="7.865"/>
+  <system-out><![CDATA[:help
+
+Welcome to Gradle 2.9.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 7.348 secs
+
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/nataniel/.gradle/wrapper/dists/gradle-2.9-bin/ebaspjjvvkuki3ldbldx7hexd/gradle-2.9/lib/gradle-core-2.9.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/nataniel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/bd245d6746cdd4e6203e976e21d597a46f115802/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.gradle.logging.internal.slf4j.OutputEventListenerBackedLoggerContext]
+]]></system-err>
+</testsuite>

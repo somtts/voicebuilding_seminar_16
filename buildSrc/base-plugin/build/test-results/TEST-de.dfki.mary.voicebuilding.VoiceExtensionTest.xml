@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.dfki.mary.voicebuilding.VoiceExtensionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-14T15:56:32" hostname="nataniel-notebook" time="0.016">
+  <properties/>
+  <testcase name="testDescription" classname="de.dfki.mary.voicebuilding.VoiceExtensionTest" time="0.003"/>
+  <testcase name="testLocale" classname="de.dfki.mary.voicebuilding.VoiceExtensionTest" time="0.003"/>
+  <testcase name="testName" classname="de.dfki.mary.voicebuilding.VoiceExtensionTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

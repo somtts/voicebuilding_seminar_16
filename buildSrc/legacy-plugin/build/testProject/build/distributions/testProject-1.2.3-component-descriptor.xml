@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><marytts-install xmlns="http://mary.dfki.de/installer">
+  <voice gender="male" locale="en_GB" name="cmu-time-awb" type="unit selection" version="1.2.3">
+    <description>A male English unit selection voice</description>
+    <license href="http://mary.dfki.de/download/arctic-license.html"/>
+    <package filename="testProject-1.2.3.zip" md5sum="527e10c0d0500d37d4d974f7b38c5e0f" size="3190944">
+      <location folder="true" href="http://mary.dfki.de/download/5.2-beta2/"/>
+    </package>
+    <depends language="en-GB" version="5.2-beta2"/>
+  </voice>
+</marytts-install>

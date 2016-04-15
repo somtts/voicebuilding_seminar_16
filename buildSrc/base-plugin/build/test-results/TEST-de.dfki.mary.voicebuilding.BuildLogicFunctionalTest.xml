@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2016-04-14T15:56:17" hostname="nataniel-notebook" time="35.49">
+  <properties/>
+  <testcase name="testGeneratePom" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="11.626"/>
+  <testcase name="testGeneratePomProperties" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.988"/>
+  <testcase name="testGenerateServiceLoader" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.682"/>
+  <testcase name="testGenerateSource" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.637"/>
+  <testcase name="testGenerateVoiceConfig" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.581"/>
+  <testcase name="testHelp" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.284"/>
+  <testcase name="testJavaCompatibility" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.304"/>
+  <testcase name="testPlugins" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.293"/>
+  <testcase name="testVoiceProps" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.282"/>
+  <testcase name="testCompileJava" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="11.645"/>
+  <testcase name="testCompileTestJava" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="1.585"/>
+  <testcase name="testJar" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="0.844"/>
+  <testcase name="testCompileIntegrationTestGroovy" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="4.207"/>
+  <testcase name="testTest" classname="de.dfki.mary.voicebuilding.BuildLogicFunctionalTest" time="1.475"/>
+  <system-out><![CDATA[:generatePom
+
+BUILD SUCCESSFUL
+
+Total time: 10.097 secs
+
+:generatePom UP-TO-DATE
+:testGeneratePom
+
+BUILD SUCCESSFUL
+
+Total time: 0.93 secs
+
+:generatePomProperties
+
+BUILD SUCCESSFUL
+
+Total time: 0.439 secs
+
+:generatePomProperties UP-TO-DATE
+:testGeneratePomProperties
+
+BUILD SUCCESSFUL
+
+Total time: 0.449 secs
+
+:generateServiceLoader
+
+BUILD SUCCESSFUL
+
+Total time: 0.337 secs
+
+:generateServiceLoader UP-TO-DATE
+:testGenerateServiceLoader
+
+BUILD SUCCESSFUL
+
+Total time: 0.277 secs
+
+:generateSource
+
+BUILD SUCCESSFUL
+
+Total time: 0.305 secs
+
+:generateSource UP-TO-DATE
+:testGenerateSource
+
+BUILD SUCCESSFUL
+
+Total time: 0.258 secs
+
+:generateVoiceConfig
+
+BUILD SUCCESSFUL
+
+Total time: 0.252 secs
+
+:generateVoiceConfig UP-TO-DATE
+:testGenerateVoiceConfig
+
+BUILD SUCCESSFUL
+
+Total time: 0.244 secs
+
+:help
+
+Welcome to Gradle 2.9.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 0.231 secs
+
+:testJavaCompatibility
+
+BUILD SUCCESSFUL
+
+Total time: 0.229 secs
+
+:testPlugins
+
+BUILD SUCCESSFUL
+
+Total time: 0.223 secs
+
+:testVoiceProps
+
+BUILD SUCCESSFUL
+
+Total time: 0.223 secs
+
+:generateSource UP-TO-DATE
+:compileJava
+Download https://jcenter.bintray.com/org/codehaus/groovy/groovy-all/2.4.4/groovy-all-2.4.4.pom
+Download https://jcenter.bintray.com/gov/nist/math/Jampack/1.0/Jampack-1.0.pom
+Download https://jcenter.bintray.com/de/dfki/mary/marytts-runtime/5.2-beta2/marytts-runtime-5.2-beta2.jar
+Download https://jcenter.bintray.com/de/dfki/mary/marytts-common/5.2-beta2/marytts-common-5.2-beta2.jar
+Download https://jcenter.bintray.com/de/dfki/mary/marytts-signalproc/5.2-beta2/marytts-signalproc-5.2-beta2.jar
+Download https://jcenter.bintray.com/org/codehaus/groovy/groovy-all/2.4.4/groovy-all-2.4.4.jar
+Download https://jcenter.bintray.com/gov/nist/math/Jampack/1.0/Jampack-1.0.jar
+
+BUILD SUCCESSFUL
+
+Total time: 11.197 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:testCompileJava
+
+BUILD SUCCESSFUL
+
+Total time: 0.396 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava
+Download https://jcenter.bintray.com/junit/junit/4.12/junit-4.12.pom
+Download https://jcenter.bintray.com/junit/junit/4.12/junit-4.12.jar
+
+BUILD SUCCESSFUL
+
+Total time: 1.186 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:testCompileTestJava
+
+BUILD SUCCESSFUL
+
+Total time: 0.357 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:generatePom UP-TO-DATE
+:generatePomProperties UP-TO-DATE
+:jar
+
+BUILD SUCCESSFUL
+
+Total time: 0.369 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:generatePom UP-TO-DATE
+:generatePomProperties UP-TO-DATE
+:jar UP-TO-DATE
+:testJar
+
+BUILD SUCCESSFUL
+
+Total time: 0.436 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:compileTestGroovy UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:compileIntegrationTestJava UP-TO-DATE
+:compileIntegrationTestGroovy
+Download https://jcenter.bintray.com/org/testng/testng/6.9.4/testng-6.9.4.pom
+Download https://jcenter.bintray.com/org/testng/testng/6.9.4/testng-6.9.4.jar
+
+BUILD SUCCESSFUL
+
+Total time: 3.788 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:compileTestGroovy UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:compileIntegrationTestJava UP-TO-DATE
+:compileIntegrationTestGroovy UP-TO-DATE
+:testCompileIntegrationTestGroovy
+
+BUILD SUCCESSFUL
+
+Total time: 0.364 secs
+
+:generateSource UP-TO-DATE
+:compileJava UP-TO-DATE
+:compileGroovy UP-TO-DATE
+:generateServiceLoader UP-TO-DATE
+:generateVoiceConfig UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:compileTestJava UP-TO-DATE
+:compileTestGroovy UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test
+
+BUILD SUCCESSFUL
+
+Total time: 1.455 secs
+
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/nataniel/.gradle/wrapper/dists/gradle-2.9-bin/ebaspjjvvkuki3ldbldx7hexd/gradle-2.9/lib/gradle-core-2.9.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/nataniel/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/bd245d6746cdd4e6203e976e21d597a46f115802/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.gradle.logging.internal.slf4j.OutputEventListenerBackedLoggerContext]
+]]></system-err>
+</testsuite>

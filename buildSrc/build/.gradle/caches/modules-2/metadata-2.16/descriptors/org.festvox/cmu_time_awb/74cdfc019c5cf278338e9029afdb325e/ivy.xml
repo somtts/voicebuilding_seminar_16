@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+  <info organisation="org.festvox" module="cmu_time_awb" revision="" status="integration" publication="20160414175706" default="true">
+    <description/>
+  </info>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="cmu_time_awb" type="tar.bz2" ext="tar.bz2" conf="" classifier="ldom"/>
+  </publications>
+</ivy-module>

@@ -1,0 +1,182 @@
+
+        buildscript {
+            repositories {
+                jcenter()
+            }
+            dependencies {
+                classpath group: 'xmlunit', name: 'xmlunit', version: '1.6'
+            }
+        }
+
+        plugins {
+            id 'de.dfki.mary.voicebuilding-base'
+        }
+
+        group "de.dfki.mary"
+        version "1.2.3"
+
+        voice {
+            name = "cmu-slt"
+            license {
+                name = "Arctic"
+                url = "http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_slt_arctic/COPYING"
+            }
+        }
+
+        task testPlugins(group: 'Verification') << {
+            assert plugins.findPlugin('java')
+            assert plugins.findPlugin('de.dfki.mary.voicebuilding-base')
+        }
+
+        task testVoiceProps(group: 'Verification') << {
+            assert voice.name == "cmu-slt"
+            assert voice.language == "en"
+            assert voice.region == "US"
+            assert voice.nameCamelCase == 'CmuSlt'
+            assert voice.locale == new Locale("en", "US")
+            assert voice.localeXml == "en-US"
+            assert voice.description == "A female English unit selection voice"
+            assert voice.license?.name == "Arctic"
+        }
+
+        task testJavaCompatibility(group: 'Verification') << {
+            assert "$sourceCompatibility" == '1.7'
+            assert "$targetCompatibility" == '1.7'
+        }
+
+        task testGenerateSource(group: 'Verification') {
+            dependsOn generateSource
+            doLast {
+                assert file("$buildDir/generatedSrc/main/java/marytts/voice/$voice.nameCamelCase/Config.java").exists()
+            }
+        }
+
+        task testCompileJava(group: 'Verification') {
+            dependsOn compileJava
+            doLast {
+                assert file("$buildDir/classes/main/marytts/voice/$voice.nameCamelCase/Config.class").exists()
+            }
+        }
+
+        task testCompileTestJava(group: 'Verification') {
+            dependsOn compileTestJava
+            doLast {
+                assert file("$buildDir/classes/test/marytts/voice/$voice.nameCamelCase/ConfigTest.class").exists()
+            }
+        }
+
+        task testCompileIntegrationTestGroovy(group: 'Verification') {
+            dependsOn compileIntegrationTestGroovy
+            doLast {
+                assert file("$buildDir/classes/integrationTest/marytts/voice/$voice.nameCamelCase/LoadVoiceIT.class").exists()
+            }
+        }
+
+        task testGenerateVoiceConfig(group: 'Verification') {
+            dependsOn generateVoiceConfig
+            doLast {
+                def configFile = file("$buildDir/resources/main/marytts/voice/$voice.nameCamelCase/voice.config")
+                assert configFile.exists()
+                def actual = [:]
+                configFile.eachLine { line ->
+                    switch(line) {
+                        case ~/.+=.+/:
+                            def (key, value) = line.split('=', 2)
+                            actual[key.trim()] = value.trim()
+                            break
+                        default:
+                            break
+                    }
+                }
+                def expected = [
+                        name                             : "cmu-slt",
+                        locale                           : "en_US",
+                        'unitselection.voices.list'      : "cmu-slt",
+                        "voice.cmu-slt.domain"      : 'general',
+                        "voice.cmu-slt.gender"      : "female",
+                        "voice.cmu-slt.locale"      : "en_US",
+                        "voice.cmu-slt.samplingRate": '16000'
+                ]
+                assert actual == expected
+            }
+        }
+
+        task testGenerateServiceLoader(group: 'Verification') {
+            dependsOn generateServiceLoader
+            doLast {
+                def serviceLoaderFile = file("$buildDir/resources/main/META-INF/services/marytts.config.MaryConfig")
+                assert serviceLoaderFile.exists()
+                assert serviceLoaderFile.text == "marytts.voice.${voice.nameCamelCase}.Config"
+            }
+        }
+
+        import org.custommonkey.xmlunit.XMLUnit
+        import org.custommonkey.xmlunit.examples.RecursiveElementNameAndTextQualifier
+
+        task testGeneratePom(group: 'Verification') {
+            dependsOn generatePom
+            doLast {
+                def pomFile = file("$buildDir/resources/main/META-INF/maven/de.dfki.mary/voice-cmu-slt/pom.xml")
+                assert pomFile.exists()
+                def pomXml = '''<?xml version="1.0"?>
+                    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                      <modelVersion>4.0.0</modelVersion>
+                      <groupId>de.dfki.mary</groupId>
+                      <artifactId>testProject</artifactId>
+                      <version>1.2.3</version>
+                      <description>A female English unit selection voice</description>
+                      <licenses>
+                        <license>
+                          <name>Arctic</name>
+                          <url>http://festvox.org/cmu_arctic/cmu_arctic/cmu_us_slt_arctic/COPYING</url>
+                        </license>
+                      </licenses>
+                      <dependencies>
+                        <dependency>
+                          <groupId>junit</groupId>
+                          <artifactId>junit</artifactId>
+                          <version>4.12</version>
+                          <scope>test</scope>
+                        </dependency>
+                        <dependency>
+                          <groupId>de.dfki.mary</groupId>
+                          <artifactId>marytts-runtime</artifactId>
+                          <version>5.2-beta2</version>
+                          <scope>compile</scope>
+                        </dependency>
+                      </dependencies>
+                    </project>'''
+                XMLUnit.ignoreWhitespace = true
+                def diff = XMLUnit.compareXML(pomFile.text, pomXml)
+                diff.overrideElementQualifier(new RecursiveElementNameAndTextQualifier())
+                assert diff.similar()
+            }
+        }
+
+        task testGeneratePomProperties(group: 'Verification') {
+            dependsOn generatePomProperties
+            doLast {
+                def pomPropertiesFile = file("$buildDir/resources/main/META-INF/maven/de.dfki.mary/voice-cmu-slt/pom.properties")
+                assert pomPropertiesFile.exists()
+                assert pomPropertiesFile.readLines() == ['version=1.2.3', 'groupId=de.dfki.mary', 'artifactId=testProject']
+            }
+        }
+
+        import java.util.zip.ZipFile
+
+        task testJar(group: 'Verification') {
+            dependsOn jar
+            doLast {
+                def actual = new ZipFile(jar.archivePath).entries().findAll { !it.isDirectory() }.collect { it.name } as Set
+                def expected = [
+                    'META-INF/MANIFEST.MF',
+                    'META-INF/services/marytts.config.MaryConfig',
+                    "META-INF/maven/de.dfki.mary/voice-cmu-slt/pom.xml",
+                    "META-INF/maven/de.dfki.mary/voice-cmu-slt/pom.properties",
+                    "marytts/voice/$voice.nameCamelCase/Config.class",
+                    "marytts/voice/$voice.nameCamelCase/voice.config"
+                ] as Set
+                assert actual == expected
+            }
+        }
+        

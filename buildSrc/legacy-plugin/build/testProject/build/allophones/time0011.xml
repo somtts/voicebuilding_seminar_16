@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><maryxml xmlns="http://mary.dfki.de/2002/MaryXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.5" xml:lang="en-US">
+  <p>
+    <s>
+      <prosody pitch="+5%" range="+20%">
+        <phrase>
+          <boundary breakindex="3"/><t g2p_method="lexicon" ph="_ D" pos="DT">The<syllable ph="_ D">
+              <ph p="_"/>
+              <ph p="D"/>
+            </syllable>
+          </t>
+          <t accent="L+H*" g2p_method="lexicon" ph="' @ t AI" pos="NN">time<syllable accent="L+H*" ph="' @ t AI" stress="1">
+              <ph p="@"/>
+              <ph p="t"/>
+              <ph p="AI"/>
+            </syllable>
+          </t>
+          <t g2p_method="lexicon" ph="' m I" pos="VBZ">is<syllable ph="' m I" stress="1">
+              <ph p="m"/>
+              <ph p="I"/>
+            </syllable>
+          </t>
+          <t g2p_method="lexicon" ph="' z n" pos="RB">now<syllable ph="' z n" stress="1">
+              <ph p="z"/>
+              <ph p="n"/>
+            </syllable>
+          </t>
+          <t pos=".">,</t>
+          <t g2p_method="lexicon" ph="aU" pos=",">a<syllable ph="aU">
+              <ph p="aU"/>
+            </syllable>
+          </t>
+          
+        </phrase>
+      </prosody>
+      <prosody pitch="+1%" range="+6%">
+        <phrase>
+          <t g2p_method="lexicon" ph="' _ @ - l I t" pos="DT">little<syllable ph="' _ @" stress="1">
+              <ph p="_"/>
+              <ph p="@"/>
+            </syllable>
+            <syllable ph="l I t">
+              <ph p="l"/>
+              <ph p="I"/>
+              <ph p="t"/>
+            </syllable>
+          </t>
+          <t accent="!H*" g2p_method="lexicon" ph="' @ l - { f" pos="JJ">after<syllable accent="!H*" ph="' @ l" stress="1">
+              <ph p="@"/>
+              <ph p="l"/>
+            </syllable>
+            <syllable ph="{ f">
+              <ph p="{"/>
+              <ph p="f"/>
+            </syllable>
+          </t>
+          <t g2p_method="lexicon" ph="' t r= f" pos="IN">five<syllable ph="' t r= f" stress="1">
+              <ph p="t"/>
+              <ph p="r="/>
+              <ph p="f"/>
+            </syllable>
+          </t>
+          <t g2p_method="lexicon" ph="' AI v" pos="CD">to<syllable ph="' AI v" stress="1">
+              <ph p="AI"/>
+              <ph p="v"/>
+            </syllable>
+          </t>
+          <t g2p_method="lexicon" ph="t - ' @ I - l E v" pos="TO">eleven<syllable ph="t">
+              <ph p="t"/>
+            </syllable>
+            <syllable ph="' @ I" stress="1">
+              <ph p="@"/>
+              <ph p="I"/>
+            </syllable>
+            <syllable ph="l E v">
+              <ph p="l"/>
+              <ph p="E"/>
+              <ph p="v"/>
+            </syllable>
+          </t>
+          <t pos=".">,</t>
+          
+        </phrase>
+      </prosody>
+      <prosody pitch="-1%" range="-6%">
+        <phrase>
+          <t g2p_method="lexicon" ph="' @ n" pos="CD">in<syllable ph="' @ n" stress="1">
+              <ph p="@"/>
+              <ph p="n"/>
+            </syllable>
+          </t>
+          <t g2p_method="lexicon" ph="_ I" pos=",">the<syllable ph="_ I">
+              <ph p="_"/>
+              <ph p="I"/>
+            </syllable>
+          </t>
+          
+        </phrase>
+      </prosody>
+      <prosody pitch="-5%" range="-20%">
+        <phrase>
+          <t g2p_method="lexicon" ph="' n D - @ m O r n I N _ _" pos="IN">morning<syllable ph="' n D" stress="1">
+              <ph p="n"/>
+              <ph p="D"/>
+            </syllable>
+            <syllable ph="@ m O r n I N _ _">
+              <ph p="@"/>
+              <ph p="m"/>
+              <ph p="O"/>
+              <ph p="r"/><ph p="n"/><ph p="I"/><ph p="N"/><ph p="_"/><ph p="_"/>
+            </syllable>
+          </t>
+          <t pos=".">.</t>
+          
+        </phrase>
+      </prosody>
+    </s>
+  </p>
+</maryxml>

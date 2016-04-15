@@ -1,0 +1,8 @@
+apply plugin: 'de.dfki.mary.voicebuilding-legacy'
+
+voice {
+    name = 'fraser'
+    gender = 'male'
+    language = 'en'
+    region = 'US'
+}

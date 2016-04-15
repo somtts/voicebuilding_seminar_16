@@ -1,0 +1,160 @@
+2016-04-14 17:59:31,799 [Test worker] INFO  marytts.main Mary starting up...
+2016-04-14 17:59:31,803 [Test worker] INFO  marytts.main Specification version 5.2-beta2
+2016-04-14 17:59:31,803 [Test worker] INFO  marytts.main Implementation version unknown
+2016-04-14 17:59:31,803 [Test worker] INFO  marytts.main Running on a Java 1.7.0_95 implementation by Oracle Corporation, on a Linux platform (amd64, 4.2.0-35-generic)
+2016-04-14 17:59:31,950 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.Synthesis'
+2016-04-14 17:59:31,954 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TextToMaryXML'
+2016-04-14 17:59:31,955 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SableParser'
+2016-04-14 17:59:31,956 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SSMLParser'
+2016-04-14 17:59:31,957 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.APMLParser'
+2016-04-14 17:59:31,958 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.EmotionmlParser'
+2016-04-14 17:59:31,958 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JTokeniser'
+2016-04-14 17:59:31,959 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.DummyTokens2Words'
+2016-04-14 17:59:31,960 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.ProsodyGeneric'
+2016-04-14 17:59:31,963 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PronunciationModel'
+2016-04-14 17:59:31,964 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.TargetFeatureLister'
+2016-04-14 17:59:31,965 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HalfPhoneTargetFeatureLister'
+2016-04-14 17:59:31,966 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.AcousticModeller'
+2016-04-14 17:59:31,967 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedAcoustparamsExtractor'
+2016-04-14 17:59:31,968 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.RealisedDurationsExtractor'
+2016-04-14 17:59:31,968 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.HTSEngine'
+2016-04-14 17:59:31,970 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.PraatTextGridGenerator'
+2016-04-14 17:59:31,971 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.JTokeniser'
+2016-04-14 17:59:31,972 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Preprocess'
+2016-04-14 17:59:32,182 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_US.)'
+2016-04-14 17:59:32,184 [Test worker] INFO  marytts.JPhonemiser User dictionary './user-dictionaries/userdict-en_US.txt' for locale 'en_US' does not exist. Ignoring.
+2016-04-14 17:59:32,297 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.JPhonemiser(en_GB.)'
+2016-04-14 17:59:32,297 [Test worker] INFO  marytts.JPhonemiser User dictionary './user-dictionaries/userdict-en_GB.txt' for locale 'en_GB' does not exist. Ignoring.
+2016-04-14 17:59:32,378 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.Prosody'
+2016-04-14 17:59:32,379 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.SimplePhoneme2AP(en_US)'
+2016-04-14 17:59:32,380 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.language.en.PronunciationModel'
+2016-04-14 17:59:32,381 [Test worker] INFO  marytts.ModuleRegistry Now initiating mary module 'marytts.modules.OpenNLPPosTagger(en,en.pos)'
+2016-04-14 17:59:32,387 [Test worker] INFO  marytts.UnitSelectionSynthesizer started.
+2016-04-14 17:59:32,389 [Test worker] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->TARGETFEATURES, locale null).
+2016-04-14 17:59:32,389 [Test worker] INFO  marytts.HTSEngine Module started (TARGETFEATURES->AUDIO, locale null).
+2016-04-14 17:59:32,389 [Test worker] INFO  marytts.HMMSynthesizer started.
+2016-04-14 17:59:32,389 [Test worker] INFO  marytts.Synthesis Module started (ACOUSTPARAMS->AUDIO, locale null).
+2016-04-14 17:59:32,394 [Test worker] INFO  marytts.HMMSynthesizer Starting power-on self test.
+2016-04-14 17:59:32,396 [Test worker] INFO  marytts.TextToMaryXML Module started (TEXT->RAWMARYXML, locale null).
+2016-04-14 17:59:32,396 [Test worker] INFO  marytts.TextToMaryXML Starting power-on self test.
+2016-04-14 17:59:32,403 [Test worker] WARN  marytts.TextToMaryXML Locale is null, overriding with de_DE
+2016-04-14 17:59:32,404 [Test worker] WARN  marytts.TextToMaryXML Locale is null, overriding with de_DE
+2016-04-14 17:59:32,404 [Test worker] INFO  marytts.TextToMaryXML Power-on self test complete.
+2016-04-14 17:59:32,783 [Test worker] INFO  marytts.SableParser Module started (SABLE->RAWMARYXML, locale null).
+2016-04-14 17:59:32,783 [Test worker] INFO  marytts.SableParser Starting power-on self test.
+2016-04-14 17:59:32,784 [Test worker] INFO  marytts.SableParser Power-on self test complete.
+2016-04-14 17:59:32,916 [Test worker] INFO  marytts.SSMLParser Module started (SSML->RAWMARYXML, locale null).
+2016-04-14 17:59:32,916 [Test worker] INFO  marytts.SSMLParser Starting power-on self test.
+2016-04-14 17:59:32,916 [Test worker] INFO  marytts.SSMLParser Power-on self test complete.
+2016-04-14 17:59:33,033 [Test worker] INFO  marytts.APMLParser Module started (APML->RAWMARYXML, locale null).
+2016-04-14 17:59:33,033 [Test worker] INFO  marytts.APMLParser Starting power-on self test.
+2016-04-14 17:59:33,033 [Test worker] INFO  marytts.APMLParser Power-on self test complete.
+2016-04-14 17:59:33,108 [Test worker] INFO  marytts.EmotionmlParser Module started (EMOTIONML->RAWMARYXML, locale null).
+2016-04-14 17:59:33,109 [Test worker] INFO  marytts.EmotionmlParser Starting power-on self test.
+2016-04-14 17:59:33,109 [Test worker] INFO  marytts.EmotionmlParser Power-on self test complete.
+2016-04-14 17:59:33,109 [Test worker] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale null).
+2016-04-14 17:59:33,180 [Test worker] INFO  marytts.JTokeniser Starting power-on self test.
+2016-04-14 17:59:33,180 [Test worker] INFO  marytts.JTokeniser Power-on self test complete.
+2016-04-14 17:59:33,200 [Test worker] INFO  marytts.DummyTokens2Words Module started (TOKENS->WORDS, locale null).
+2016-04-14 17:59:33,200 [Test worker] INFO  marytts.DummyTokens2Words Starting power-on self test.
+2016-04-14 17:59:33,200 [Test worker] INFO  marytts.DummyTokens2Words Power-on self test complete.
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale null).
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.Prosody Starting power-on self test.
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.Prosody Power-on self test complete.
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale null).
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.PronunciationModel Starting power-on self test.
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.PronunciationModel Power-on self test complete.
+2016-04-14 17:59:33,211 [Test worker] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.TargetFeatureLister Module started (ACOUSTPARAMS->HALFPHONE_TARGETFEATURES, locale null).
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.TargetFeatureLister Starting power-on self test.
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.TargetFeatureLister Power-on self test complete.
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.AcousticModeller Module started (ALLOPHONES->ACOUSTPARAMS, locale null).
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.AcousticModeller Starting power-on self test.
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.AcousticModeller Power-on self test complete.
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.Realised acoustparams extractor Module started (AUDIO->REALISED_ACOUSTPARAMS, locale null).
+2016-04-14 17:59:33,212 [Test worker] INFO  marytts.Realised acoustparams extractor Starting power-on self test.
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Realised acoustparams extractor Power-on self test complete.
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Realised durations extractor Module started (AUDIO->REALISED_DURATIONS, locale null).
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Realised durations extractor Starting power-on self test.
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Realised durations extractor Power-on self test complete.
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Praat TextGrid generator Module started (AUDIO->PRAAT_TEXTGRID, locale null).
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Praat TextGrid generator Starting power-on self test.
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.Praat TextGrid generator Power-on self test complete.
+2016-04-14 17:59:33,213 [Test worker] INFO  marytts.JTokeniser Module started (RAWMARYXML->TOKENS, locale en).
+2016-04-14 17:59:33,271 [Test worker] INFO  marytts.JTokeniser Starting power-on self test.
+2016-04-14 17:59:33,271 [Test worker] INFO  marytts.JTokeniser Power-on self test complete.
+2016-04-14 17:59:33,272 [Test worker] INFO  marytts.Preprocess Module started (TOKENS->WORDS, locale en).
+2016-04-14 17:59:33,272 [Test worker] INFO  marytts.Preprocess Starting power-on self test.
+2016-04-14 17:59:33,272 [Test worker] INFO  marytts.Preprocess Power-on self test complete.
+2016-04-14 17:59:33,272 [Test worker] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_US).
+2016-04-14 17:59:33,272 [Test worker] INFO  marytts.JPhonemiser Starting power-on self test.
+2016-04-14 17:59:33,273 [Test worker] INFO  marytts.JPhonemiser Power-on self test complete.
+2016-04-14 17:59:33,273 [Test worker] INFO  marytts.JPhonemiser Module started (PARTSOFSPEECH->PHONEMES, locale en_GB).
+2016-04-14 17:59:33,273 [Test worker] INFO  marytts.JPhonemiser Starting power-on self test.
+2016-04-14 17:59:33,273 [Test worker] INFO  marytts.JPhonemiser Power-on self test complete.
+2016-04-14 17:59:33,286 [Test worker] INFO  marytts.Prosody Module started (PHONEMES->INTONATION, locale en).
+2016-04-14 17:59:33,286 [Test worker] INFO  marytts.Prosody Starting power-on self test.
+2016-04-14 17:59:33,286 [Test worker] INFO  marytts.Prosody Power-on self test complete.
+2016-04-14 17:59:33,287 [Test worker] INFO  marytts.SimplePhoneme2AP Module started (SIMPLEPHONEMES->ACOUSTPARAMS, locale en_US).
+2016-04-14 17:59:33,287 [Test worker] INFO  marytts.SimplePhoneme2AP Starting power-on self test.
+2016-04-14 17:59:33,291 [Test worker] INFO  marytts.SimplePhoneme2AP Power-on self test complete.
+2016-04-14 17:59:33,291 [Test worker] INFO  marytts.PronunciationModel Module started (INTONATION->ALLOPHONES, locale en).
+2016-04-14 17:59:33,291 [Test worker] INFO  marytts.PronunciationModel Starting power-on self test.
+2016-04-14 17:59:33,291 [Test worker] INFO  marytts.PronunciationModel Power-on self test complete.
+2016-04-14 17:59:33,291 [Test worker] INFO  marytts.OpenNLPPosTagger Module started (WORDS->PARTSOFSPEECH, locale en).
+2016-04-14 17:59:34,723 [Test worker] INFO  marytts.OpenNLPPosTagger Starting power-on self test.
+2016-04-14 17:59:34,723 [Test worker] INFO  marytts.OpenNLPPosTagger Power-on self test complete.
+2016-04-14 17:59:34,724 [Test worker] INFO  marytts.main Startup complete.
+2016-04-14 17:59:34,760 [Test worker] INFO  marytts.R 1 New request (input type "TEXT", output type "ALLOPHONES)
+2016-04-14 17:59:34,760 [Test worker] INFO  marytts.R 1 Handling request using the following modules:
+2016-04-14 17:59:34,761 [Test worker] INFO  marytts.R 1 - TextToMaryXML (marytts.modules.TextToMaryXML)
+2016-04-14 17:59:34,761 [Test worker] INFO  marytts.R 1 Next module: TextToMaryXML
+2016-04-14 17:59:34,762 [Test worker] INFO  marytts.R 1 Handling request using the following modules:
+2016-04-14 17:59:34,762 [Test worker] INFO  marytts.R 1 - JTokeniser (marytts.language.en.JTokeniser)
+2016-04-14 17:59:34,762 [Test worker] INFO  marytts.R 1 - Preprocess (marytts.language.en.Preprocess)
+2016-04-14 17:59:34,762 [Test worker] INFO  marytts.R 1 - OpenNLPPosTagger (marytts.modules.OpenNLPPosTagger)
+2016-04-14 17:59:34,762 [Test worker] INFO  marytts.R 1 - JPhonemiser (marytts.modules.JPhonemiser)
+2016-04-14 17:59:34,762 [Test worker] INFO  marytts.R 1 - Prosody (marytts.language.en.Prosody)
+2016-04-14 17:59:34,763 [Test worker] INFO  marytts.R 1 - PronunciationModel (marytts.language.en.PronunciationModel)
+2016-04-14 17:59:34,763 [Test worker] INFO  marytts.R 1 Next module: JTokeniser
+2016-04-14 17:59:34,765 [Test worker] INFO  marytts.R 1 Next module: Preprocess
+2016-04-14 17:59:34,767 [Test worker] INFO  marytts.R 1 Next module: OpenNLPPosTagger
+2016-04-14 17:59:34,771 [Test worker] INFO  marytts.R 1 Next module: JPhonemiser
+2016-04-14 17:59:34,772 [Test worker] INFO  marytts.R 1 Next module: Prosody
+2016-04-14 17:59:34,775 [Test worker] INFO  marytts.R 1 Next module: PronunciationModel
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1 Request processed in 16 ms.
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    TextToMaryXML took 0 ms
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    JTokeniser took 2 ms
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    Preprocess took 2 ms
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    OpenNLPPosTagger took 4 ms
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    JPhonemiser took 1 ms
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    Prosody took 3 ms
+2016-04-14 17:59:34,776 [Test worker] INFO  marytts.R 1    PronunciationModel took 0 ms
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.main Shutting down modules...
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.Synthesis Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.TextToMaryXML Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.SableParser Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.SSMLParser Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.APMLParser Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.EmotionmlParser Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.JTokeniser Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.DummyTokens2Words Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.Prosody Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.PronunciationModel Module shut down.
+2016-04-14 17:59:34,875 [Thread-5] INFO  marytts.TargetFeatureLister Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.TargetFeatureLister Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.AcousticModeller Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.Realised acoustparams extractor Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.Realised durations extractor Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.HTSEngine Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.Praat TextGrid generator Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.JTokeniser Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.Preprocess Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.JPhonemiser Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.JPhonemiser Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.Prosody Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.SimplePhoneme2AP Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.PronunciationModel Module shut down.
+2016-04-14 17:59:34,876 [Thread-5] INFO  marytts.OpenNLPPosTagger Module shut down.
+2016-04-14 17:59:34,877 [Thread-5] INFO  marytts.main Shutdown complete.

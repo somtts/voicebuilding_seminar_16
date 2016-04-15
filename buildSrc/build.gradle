@@ -1,0 +1,57 @@
+allprojects {
+    apply plugin: 'groovy'
+    apply plugin: 'maven-publish'
+
+    group 'de.dfki.mary'
+    version '0.5.3-SNAPSHOT'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        compile localGroovy()
+        compile group: 'de.dfki.mary', name: 'marytts-runtime', version: maryttsVersion
+        testCompile group: 'org.testng', name: 'testng', version: '6.9.4'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            dependencySubstitution {
+                force 'org.codehaus.groovy:groovy-all:2.4.4'
+            }
+        }
+    }
+
+    test {
+        useTestNG()
+
+        testLogging {
+            exceptionFormat = 'full'
+        }
+    }
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+
+                artifact sourceJar {
+                    classifier "sources"
+                }
+            }
+        }
+    }
+}
+
+apply from: 'testKitLogic.gradle'
+
+dependencies {
+    compile gradleApi()
+    compile project('data-plugin')
+    runtime project('legacy-plugin')
+}
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+}
