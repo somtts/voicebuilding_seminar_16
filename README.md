@@ -13,7 +13,8 @@ To
 
 Build with:
 
-./gradlew initLegacy
+./gradlew legacyInit
+
 ./gradlew assemble
 
 Run with 
