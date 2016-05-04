@@ -6,6 +6,7 @@ group #2: Fraser Bowen, Yauhen Klimovich, Nataniel Borges Jr
 Slides for seminar can be found [here][5]. This report can be used as a guidline to build your own voice.
 
 For those who just want to get it Fraser's voice up&running, do the following:
+
 1. `git clone https://github.com/YauhenMinsk/voicebuilding_seminar_16.git`
 2. run `./gradlew legacyInit` (~3-6 min on a modern laptop 8Gb RAM). If you got BUILD SUCCESS, do the next item.
 3. run the `./gradlew run` (~10-13 min on the same env). Wait until you see something like the following
