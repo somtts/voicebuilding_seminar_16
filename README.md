@@ -1,8 +1,8 @@
 ### Voicebuilding seminar 2016 report
 group #2: Fraser Bowen, Yauhen Klimovich, Nataniel Borges Jr
-
-
+* * *
 **The README describes steps we made to build English voice using [MaryTTS][1].**
+
 Slides for seminar can be found [here][5]. This report can be used as a guidline to build your own voice.
 
 For those who just want to get it Fraser's voice up&running, do the following:
@@ -21,6 +21,9 @@ For those who just want to get it Fraser's voice up&running, do the following:
 Now you can go to you local [server web-interface] (http://localhost:59125/) in your browser and try voice *fraser en_US male unitselection general*
 
 
+* * *
+### What is under the hood?
+First of all, a !audio[ sample ]( https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav ){  size=10 duration=4 }
 
 First of all, let's have a look at the 
 
