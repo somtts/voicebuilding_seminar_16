@@ -60,7 +60,7 @@ We were lucky to have a 2.5h session in a recording studio. We were team of thre
 ####How to get lab?
 
 To build diphone-based voice we need to have lab files which contain information for MaryTTS to build stat. model.
-Lab-file is an annotation of 
+Lab-file is an annotation of a prompt. To save time and efforts we used [auto-alignment tool from Munich University][4]
 
 Things we did:
 Installed marytts
@@ -210,5 +210,6 @@ To test the newly built voice the command "gradlew run" was used and some random
 [1]: http://mary.dfki.de/
 [2]: https://www.dropbox.com/sh/korhibc4krsd2is/AABKAkxR-n1V1ohonAHoQ7Cda?dl=0
 [3]: https://github.com/psibre/arctic-prompts
+[4]: https://clarin.phonetik.uni-muenchen.de/BASWebServices/index.html#/services/WebMAUSMultiple
 [5]: http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/#/
 
