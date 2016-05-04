@@ -3,10 +3,9 @@ group #2: Fraser Bowen, Yauhen Klimovich, Nataniel Borges Jr
 
 
 **The README describes steps we made to build English voice using [MaryTTS][1].**
-Slides for seminar can be found [here][5]
-This report can be used as a guidline to build your own voice.
-For those who just want to get it Fraser's voice up&running, do the following:
+Slides for seminar can be found [here][5]. This report can be used as a guidline to build your own voice.
 
+For those who just want to get it Fraser's voice up&running, do the following:
 1. `git clone https://github.com/YauhenMinsk/voicebuilding_seminar_16.git`
 2. run `./gradlew legacyInit` (~3-6 min on a modern laptop 8Gb RAM). If you got BUILD SUCCESS, do the next item.
 3. run the `./gradlew run` (~10-13 min on the same env). Wait until you see something like the following
@@ -21,8 +20,8 @@ For those who just want to get it Fraser's voice up&running, do the following:
 Now you can go to you local [server web-interface] (http://localhost:59125/) in your browser and try voice *fraser en_US male unitselection general*
 
 
-First of all, let's have a look at the 
 
+First of all, let's have a look at the 
 
 Things we did:
 Installed marytts
