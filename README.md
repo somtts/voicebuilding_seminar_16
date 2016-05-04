@@ -55,6 +55,13 @@ We were lucky to have a 2.5h session in a recording studio. We were team of thre
 2. 'Prompts-master', a person who is responsible for showing a new prompt after previous one read&recorded - *Nataniel*
 3. 'Editor', a person responsible to mark the whole recordings with special midi-beeps to make lives easier during the extraction of individual sentence extractions later - *Yauhen*
 
+
+
+####How to get lab?
+
+To build diphone-based voice we need to have lab files which contain information for MaryTTS to build stat. model.
+Lab-file is an annotation of 
+
 Things we did:
 Installed marytts
 Compiled a list of ‘arctic’ prompts
