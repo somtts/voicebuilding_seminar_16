@@ -20,12 +20,40 @@ For those who just want to get it Fraser's voice up&running, do the following:
 
 Now you can go to you local [server web-interface] (http://localhost:59125/) in your browser and try voice *fraser en_US male unitselection general*
 
+So, if everything is good, _welcome to the world of speech synthesis!_
 
 * * *
 ### What is under the hood?
-First of all, a !audio[ sample ]( https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav ){  size=10 duration=4 }
 
-First of all, let's have a look at the 
+
+First of all, the goal of the seminar on a high-level was to build the voice using MaryTTS.
+So, we have MaryTTS, which is responsible to build the voice model, calculate stats etc. We built the voice which is **diphone-based**.
+
+
+Let's have a look at the Mary task _execution graph_ first
+![alt text](http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/build.svg "Execution graph")
+
+top right corner is our start, left down is the end.
+
+So, clearly, to build a voice we need to have three types of data:
+
+1. text (text prompts, what a speaker records), e.g. [ text ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/text/arctic_a0001.txt) 
+2. wav (the recording itself), e.g. can be downloaded [ here ] (https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav)
+3. lab (annotated file), respective example [ here ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab)
+
+####How to get text?
+
+As we want to build the voice with as better quality as possible, we need to provide comparatively good coverage of diphones. So we used freely available [ 'arctic' text snippets ](http://festvox.org/cmu_arctic/) , compiled from public data.
+
+To get the data in a convinient form of prompts to be read by speaker in a studio, we followed the [instructions][3].
+We faced some environmental issues on OSX and Ubuntu, but resolved them succussfully.
+
+####How to get wav?
+We were lucky to have a 2.5h session in a recording studio. We were team of three. 
+
+1. 'Native _British_ English speaker' - *Fraser*
+2. 'Prompts-master', a person who is responsible for showing a new prompt after previous one read&recorded - *Nataniel*
+3. 'Editor', a person responsible to mark the whole recordings with special midi-beeps to make lives easier during the extraction of individual sentence extractions later - *Yauhen*
 
 Things we did:
 Installed marytts
