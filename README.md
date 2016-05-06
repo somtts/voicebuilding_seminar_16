@@ -76,6 +76,7 @@ Lab-file is an annotation of a prompt. To save time and efforts we used [auto-al
 _Note, that to be able to build everything praat should be installed (for MacOS find solution [here][6])_
 On OSX during the seminar we faced some installation issues of praat, because the working script was edited right before we started, but in the end we managed to fix everything manually (providing correct hyperlinks), but now it should work without an issue. 
 
+So, 
 After processing the audio, we had one large TextGrid file, which contained one important tier: The intervals of the beeps denoting the split between each utterance. Each beep had two boundaries on the TextGrid. Every other section was labeled as “voice”, and the other as “silent”. The short segment during the beep had the “silent” label. Labels which weren’t “voice” were ignored later. This includes the manually annotated errors - any “voice” labels for problematic sentences were removed.
 
 The script to get files is provided here
