@@ -53,7 +53,7 @@ We were lucky to have a 2.5h session in a recording studio. We were team of thre
 
 1. 'Native _British_ English speaker' - *Fraser*
 2. 'Prompts-master', a person who is responsible for showing a new prompt after previous one read&recorded - *Nataniel*
-3. 'Editor', a person responsible to mark the whole recordings with special midi-beeps to make lives easier during the extraction of individual sentence extractions later - *Yauhen*
+3. 'Editor', a person responsible to mark the whole recordings with special midi-beeps to make lives easier during the extraction of individual sentences(utterances) later - *Yauhen*
 
 
 
@@ -62,23 +62,19 @@ We were lucky to have a 2.5h session in a recording studio. We were team of thre
 To build diphone-based voice we need to have lab files which contain information for MaryTTS to build stat. model.
 Lab-file is an annotation of a prompt. To save time and efforts we used [auto-alignment tool from Munich University][4]
 
-Things we did:
-Installed marytts
-Compiled a list of ‘arctic’ prompts
-Recorded Fraser speaking 
-Manually removed certain segments using MIDI channel (Praat, skipping repetitions and badly recorded sentences), 893 utterances in the end
 
-Segmented voice using beeps (Created a WAV file for every valid segment using a praat script)
-Sync filenames between WAV and TXT files using a python script (as a preparation for MAUS)
-Fed the WAV and TXT files into MAUS, got output (alignment?) from MAUS
-Turned the resulting TextGrid files into label files using a praat script
+####What we did in details
 
+1. Compiled a list of ‘arctic’ prompts for recordings
+2. Recorded Fraser's speaking and got three files in wav format (one is utterances, second is beeps between prompts, third is midi-whistles to quickly find utterances with errors) 
+3. Manually removed certain segments using MIDI channel (Praat, skipping repetitions and badly recorded sentences), 893 utterances in the end. Segmented voice using beeps (Created a WAV file for every valid segment using a praat script)
+4. Sync filenames between WAV and TXT files using a python script (as a preparation for MAUS)
+5. Fed the WAV and TXT files into MAUS, got output (alignment, in the format of TextGrids) from MAUS. Turned the resulting TextGrid files into label (lab) files using a praat script.
+6. Used a voice template (gradle script) to build a voice using the WAV, TXT and LAB files (report problem with en\_GB segmentation, thus we switched to en\_US and run the MAUS part again) -> Resegmented the data using American English, fo that we had to change the phoneme labels given by MAUS to match the ones read by marytts using a python script
+7. Used ./gradlew run command to run a MaryTTS instance with the new language
 
-
-Used a voice template (gradle script) to build a voice using the WAV, TXT and LAB files (report problem with en_GB segmentation, thus we switched to en_US and run the MAUS part again)  -> Resegmented the data using American English
-Changed the phoneme labels given by MAUS to match the ones read by marytts using a python script
-Used ./gradlew run command to run a MaryTTS instance with the new language
-Note, that to be able to build everything praat should be installed (for MacOS find solution here)
+_Note, that to be able to build everything praat should be installed (for MacOS find solution [here][6])_
+On OSX during the seminar we faced some installation issues of praat, because the working script was edited right before we started, but in the end we managed to fix everything manually (providing correct hyperlinks), but now it should work without an issue. 
 
 After processing the audio, we had one large TextGrid file, which contained one important tier: The intervals of the beeps denoting the split between each utterance. Each beep had two boundaries on the TextGrid. Every other section was labeled as “voice”, and the other as “silent”. The short segment during the beep had the “silent” label. Labels which weren’t “voice” were ignored later. This includes the manually annotated errors - any “voice” labels for problematic sentences were removed.
 
@@ -212,4 +208,4 @@ To test the newly built voice the command "gradlew run" was used and some random
 [3]: https://github.com/psibre/arctic-prompts
 [4]: https://clarin.phonetik.uni-muenchen.de/BASWebServices/index.html#/services/WebMAUSMultiple
 [5]: http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/#/
-
+[6]: http://macappstore.org/praat/
