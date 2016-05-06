@@ -88,7 +88,7 @@ We obtained the first of these using a python script. We somehow got a TextGrid 
 
 We obtained the .wav files using a praat script found here:
 
-The important part of the script is this part:
+The important part of the [script](7) is this part:
 
 ```praat
 for interval from start_from to end_at
@@ -209,3 +209,4 @@ To test the newly built voice the command "gradlew run" was used and some random
 [4]: https://clarin.phonetik.uni-muenchen.de/BASWebServices/index.html#/services/WebMAUSMultiple
 [5]: http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/#/
 [6]: http://macappstore.org/praat/
+[7]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/split_in_wavs_based_on_beeps.praat
