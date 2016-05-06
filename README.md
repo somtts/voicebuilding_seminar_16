@@ -37,18 +37,18 @@ top right corner is our start, left down is the end.
 
 So, clearly, to build a voice we need to have three types of data:
 
-1. text (text prompts, what a speaker records), e.g. [ text ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/text/arctic_a0001.txt) 
-2. wav (the recording itself), e.g. can be downloaded [ here ] (https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav)
-3. lab (annotated file), respective example [ here ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab)
+1. *text* (text prompts, what a speaker records), e.g. [ text ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/text/arctic_a0001.txt) 
+2. *wav* (the recording itself), e.g. can be downloaded [ here ] (https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav)
+3. *lab* (annotated file), respective example [ here ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab)
 
-####How to get text?
+####How to get *text*?
 
 As we want to build the voice with as better quality as possible, we need to provide comparatively good coverage of diphones. So we used freely available [ 'arctic' text snippets ](http://festvox.org/cmu_arctic/) , compiled from public data.
 
 To get the data in a convinient form of prompts to be read by speaker in a studio, we followed the [instructions][3].
 We faced some environmental issues on OSX and Ubuntu, but resolved them succussfully.
 
-####How to get wav?
+####How to get *wav*?
 We were lucky to have a 2.5h session in a recording studio. We were team of three. 
 
 1. 'Native _British_ English speaker' - *Fraser*
@@ -57,7 +57,7 @@ We were lucky to have a 2.5h session in a recording studio. We were team of thre
 
 
 
-####How to get lab?
+####How to get *lab*?
 
 To build diphone-based voice we need to have lab files which contain information for MaryTTS to build stat. model.
 Lab-file is an annotation of a prompt. To save time and efforts we used [auto-alignment tool from Munich University][4]
@@ -66,8 +66,8 @@ Lab-file is an annotation of a prompt. To save time and efforts we used [auto-al
 ####What we did in details
 
 1. Compiled a list of ‘arctic’ prompts for recordings
-2. Recorded Fraser's speaking and got three files in wav format (one is utterances, second is beeps between prompts, third is midi-whistles to quickly find utterances with errors) 
-3. Manually removed certain segments using MIDI channel (Praat, skipping repetitions and badly recorded sentences), 893 utterances in the end. Segmented voice using beeps (Created a WAV file for every valid segment using a praat script)
+2. Recorded Fraser's speaking and got three files in wav format (one is utterances, second is beeps between prompts, third is midi-whistles to quickly find utterances with errors). Converted all to flac format.
+3. Using Praat GUI, we manually removed certain segments using MIDI channel (skipping repetitions and badly recorded sentences), and got 893 utterances in the end. Segmented voice using beeps (Created a WAV file for every valid segment using a praat script)
 4. Sync filenames between WAV and TXT files using a python script (as a preparation for MAUS)
 5. Fed the WAV and TXT files into MAUS, got output (alignment, in the format of TextGrids) from MAUS. Turned the resulting TextGrid files into label (lab) files using a praat script.
 6. Used a voice template (gradle script) to build a voice using the WAV, TXT and LAB files (report problem with en\_GB segmentation, thus we switched to en\_US and run the MAUS part again) -> Resegmented the data using American English, fo that we had to change the phoneme labels given by MAUS to match the ones read by marytts using a python script
