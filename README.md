@@ -90,7 +90,7 @@ Three audio tracks were recorded to .flac format: the utterances themselves, the
 
 As a group, we manually went through each segment (separated by the beeps), and evaluated if what the speaker said matched the appropriate prompt. Speaking non-stop for 2.5 hours means that mistakes are inevitably made, and the safest way to remove these mistakes was to do it manually. Seeing as we only recording around 900 utterances, it was feasible. At every point where a valid utterance was spoken, we left the label of the segment in the beep TextGrid file as "voice", but for all problematic utterances, we removed the label entirely. Later on, only segments with the label "voice" will be used. We also had to manually adjust the boundaries of some utterances, as there was confusion during the recording when the speaker repeated a failed utterance, and the prompts-master made the beep sound at the wrong time.
 
-###4. Segmenting the voice
+####4. Segmenting the voice
 
 We had one large TextGrid file, which contained one important tier: The beep tier, which had a segment with the label "voice" for every valid utterance. Labels which weren’t “voice” were ignored later. This includes the manually annotated errors - any “voice” labels for problematic sentences were removed.
 
