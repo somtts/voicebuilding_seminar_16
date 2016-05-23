@@ -216,6 +216,8 @@ The new files were used on the "voice-template" project and the "gradlew assembl
 
 To test the newly built voice the command "gradlew run" was used and as testing, some random text segments were extracted from british (www.theguardian.co.uk) and american (www.cnn.com) news websites.
 
+Find the short test recording [here][9] 
+
 [1]: http://mary.dfki.de/
 [2]: https://www.dropbox.com/sh/korhibc4krsd2is/AABKAkxR-n1V1ohonAHoQ7Cda?dl=0
 [3]: https://github.com/psibre/arctic-prompts
@@ -224,3 +226,4 @@ To test the newly built voice the command "gradlew run" was used and as testing,
 [6]: http://macappstore.org/praat/
 [7]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/split_in_wavs_based_on_beeps.praat
 [8]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/releases/download/v1.0/voice_1.0.tar
+[9]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/test_sample_1.wav
