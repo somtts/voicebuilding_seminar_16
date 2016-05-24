@@ -31,7 +31,7 @@ MaryTTS is responsible for building the voice model, calculate stats etc. We bui
 
 
 Let's have a look at the Mary task _execution graph_ first
-![alt text](http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/build.svg "Execution graph"){ width: 200px; }
+![alt text][15]
 
 * * *
 The top right corner is our start, left down is the end.
@@ -233,3 +233,4 @@ Find the short test recording [here][9]
 [12]: https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav
 [13]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab
 [14]: https://github.com/psibre/voice-template
+[15]: http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/build.svg "Execution graph"
