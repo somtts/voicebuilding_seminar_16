@@ -33,6 +33,7 @@ MaryTTS is responsible for building the voice model, calculate stats etc. We bui
 Let's have a look at the Mary task _execution graph_ first
 ![alt text](http://www.coli.uni-saarland.de/~steiner/teaching/2016/summer/voicebuilding/slides/build.svg "Execution graph")
 
+* * *
 The top right corner is our start, left down is the end.
 
 In order to build a voice we need to have three types of data:
