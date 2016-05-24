@@ -1,7 +1,7 @@
 ### Voicebuilding seminar 2016 report
 group #2: Fraser Bowen, Yauhen Klimovich, Nataniel Borges Jr
 * * *
-**The README describes steps we made to build English voice using [MaryTTS][1].**
+**This report describes steps we made to build English voice using [MaryTTS][1].**
 
 Slides for seminar can be found [here][5]. This report can be used as a guidline to build your own voice.
 
@@ -18,7 +18,7 @@ For those who just want to get it Fraser's voice up&running, do the following:
 2016-05-04 10:33:58,460 [main] INFO  marytts.server Waiting for client to connect on port 59125
 ```
 
-Now you can go to you local [server web-interface] (http://localhost:59125/) in your browser and try voice *fraser en_US male unitselection general*
+Now you can go to you local [server web-interface][10] in your browser and try voice *fraser en_US male unitselection general*
 
 So, if everything is good, _welcome to the world of speech synthesis!_
 
@@ -37,9 +37,9 @@ The top right corner is our start, left down is the end.
 
 In order to build a voice we need to have three types of data:
 
-1. *text* (text prompts, what a speaker records), e.g. [ text ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/text/arctic_a0001.txt) 
-2. *wav* (the recording itself), e.g. can be downloaded [ here ] (https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav)
-3. *lab* (annotated file), respective example [ here ](https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab)
+1. *text* (text prompts, what a speaker records), e.g. [text][11]
+2. *wav* (the recording itself), e.g. can be downloaded [here][12]
+3. *lab* (annotated file), respective example [here][13]
 
 ####How to get *text*?
 
@@ -227,3 +227,7 @@ Find the short test recording [here][9]
 [7]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/split_in_wavs_based_on_beeps.praat
 [8]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/releases/download/v1.0/voice_1.0.tar
 [9]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/test_sample_1.wav
+[10]: http://localhost:59125/
+[11]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/text/arctic_a0001.txt
+[12]: https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav
+[13]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab
