@@ -160,7 +160,7 @@ The script loops through each TextGrid file by referring to a Strings object in 
 
 At this point we had the /wav, /txt and /lab files, and were ready to build the voice.
 
-The voice was built using the "voice-template" project provided by the lecturer (https://github.com/psibre/voice-template). This template project relies on the "de.dfki.mary.voicebuilding-legacy" plugin in order to process the /wav, /txt and /lab files and make them available for MaryTTS. 
+The voice was built using the "voice-template" [project][14] provided by the lecturer. This template project relies on the "de.dfki.mary.voicebuilding-legacy" plugin in order to process the /wav, /txt and /lab files and make them available for MaryTTS. 
 
 The project's build.gradle file was configured with a "voice" object, initially to a british male speaker. It was then built using the "gradlew assemble" command. During this first compilation attempt divergences emerged between the SAMPA notations used by MaryTTS and MAUS, resulting in the compilation failing.
 
@@ -232,3 +232,4 @@ Find the short test recording [here][9]
 [11]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/text/arctic_a0001.txt
 [12]: https://www.dropbox.com/home/voicebuilding-2016/group2/processed%20data/wav?preview=arctic_a0001.wav
 [13]: https://github.com/YauhenMinsk/voicebuilding_seminar_16/blob/master/build/lab/arctic_a0001.lab
+[14]: https://github.com/psibre/voice-template
